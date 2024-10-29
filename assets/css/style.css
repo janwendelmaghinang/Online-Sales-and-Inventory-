@@ -1,0 +1,177 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background:  #ededed;
+ 
+}
+.main-container{
+  min-height: 75vh;
+}
+/* ------header--------- */
+.hpz-logo{
+  width: 300px;
+  height: auto;
+ }
+
+.header-con{
+padding: 1.5rem;
+opacity: .9;
+background:#121111;
+
+}
+.header-col-0{
+      display: none;
+}
+.header-col-2{
+      display: flex;
+      justify-content: flex-end;
+}
+
+/* Home SEction  */ /* image slider */
+.home-caption{
+  position: absolute;
+  color: white;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  padding: 2rem;
+  width: 100%;
+}
+.home-caption h1{
+  font-size: 5vw;
+}
+.home-caption p{
+  font-size: 1.5vw;
+}
+.home-bg-con{
+  display: flex;
+  align-items: center;
+}
+.home-img{
+  width: 100%;
+  max-height: 80vh;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+/* Navigation */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+.sticky + section{
+  padding-top: 100px;
+}
+.navigations{
+  background:#121111;
+  opacity: .9;
+  z-index: 2000;
+}
+.collapse ul li a{
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.nav-link{
+  font-family: sigmar one;
+  font-size: 13px;
+}
+.activeNav{
+  border-bottom: white solid .5px;
+}
+/* -----------Products  --------- */
+
+
+/* media queries */
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) { 
+
+.hpz-logo{
+    width: 100%;
+    height: auto;
+}
+.header-col-1{
+    display: flex;
+    justify-content: center;
+}
+.header-col-0{
+    display: block;
+}
+.navbar-toggler{
+    color: black;
+    z-index: 2;
+}
+.nav-ul{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.toggle-nav-2{
+  display: none;
+}
+
+/* ebike and spareparts layout */
+
+.side-col{
+  order: 2;
+}
+.prod-col{
+order: 1;
+}
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+.hpz-logo{
+max-width: 250px;
+width: 100%;
+height: auto;
+}
+.nav-ul{
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px){ 
+
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+
+
+}
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+
+}
+
+@media (min-width: 1800px) {
+   .htmls{
+     overflow-y: auto;
+   }
+   .main-container{
+    min-height: 25vh;
+    height: auto;
+  }
+   .main-footer{
+    min-height: 75vh;
+  }
+
+  .home-img{
+    width: 100%;
+    max-height: 25vh;
+  }
+}
