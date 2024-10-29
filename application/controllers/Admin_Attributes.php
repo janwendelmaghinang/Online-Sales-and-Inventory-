@@ -15,7 +15,6 @@ class Admin_Attributes extends CI_Controller{
         $data['pages'] = 'attributes/index';
         $this->load->view('admin/layout/templates',$data);
     }
-    // ------------------------
     public function color()
 	{
         $data['pages'] = 'attributes/color';
